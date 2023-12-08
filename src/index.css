@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    font-family: 'Schibsted Grotesk', sans-serif;
+}
+
+h1,h2{
+    font-family: 'Syne', sans-serif;
+}
+
+.rounded-custom {
+    border-radius: 40px;
+}
