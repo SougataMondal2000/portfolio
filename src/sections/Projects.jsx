@@ -1,18 +1,18 @@
 const projects = [
   {
-    projectIMG: "/src/assets/food-app.png",
+    projectIMG: "/public/assets/food-app.png",
     projectURL: "https://github.com/SougataMondal2000/Food-App",
   },
   {
-    projectIMG: "/src/assets/todoodle.png",
+    projectIMG: "/public/assets/todoodle.png",
     projectURL: "https://github.com/SougataMondal2000/todoodle_flask",
   },
   {
-    projectIMG: "/src/assets/game-listing.png",
+    projectIMG: "/public/assets/game-listing.png",
     projectURL: "https://github.com/SougataMondal2000/Game-Listinng-App",
   },
   {
-    projectIMG: "/src/assets/pinterest-clone.png",
+    projectIMG: "/public/assets/pinterest-clone.png",
     projectURL: "https://github.com/SougataMondal2000/image-uploader",
   },
 ];
