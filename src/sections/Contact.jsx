@@ -14,7 +14,9 @@ const Contact = () => {
           <br />by hiring me!</p>
         </div>
         <div className="items-center justify-center flex">
-          <Button label="Contact"></Button>
+        <a href="mailto:sougataofficial362000@gmail.com">
+            <Button label="Contact"></Button>
+          </a>
         </div>
       </div>
     </div>
