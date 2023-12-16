@@ -16,13 +16,13 @@ const icons = [
 
 const Footer = () => {
   return (
-    <div className="h-[200px] w-full relative flex items-center justify-center">
+    <div className="lg:h-[200px] w-full relative flex items-center justify-center">
       <div>
       <div className="h-auto w-auto pb-4">
           <ul className="flex gap-2 justify-center items-center">
             {icons.map((item)=>
             <li key={item.social} className="bg-[#DAD7CD] rounded-full border border-black flex justify-center items-center w-6 h-6 hover:bg-white transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300">
-              <a href={item.socialURL}>
+              <a href={item.socialURL} target="blank">
                 {item.icon} 
               </a>
             </li>
@@ -30,7 +30,7 @@ const Footer = () => {
           </ul>
         </div>
         <div>
-          <p className="text-[#DAD7CD] text-[12px] text-center pb-6 ">Copyright © Sougata 2023</p>
+          <p className="text-[#DAD7CD] text-[12px] text-center pb-6">Copyright © Sougata 2023</p>
         </div>
       </div>
         

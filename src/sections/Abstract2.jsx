@@ -5,7 +5,7 @@ import SquareWithTriangle3 from "../components/SquareWithTriangle3"
 
 const Abstract2 = () => {
   return (
-    <div className="p-20 w-full relative flex items-center justify-center">
+    <div className="lg:p-20 p-10 lg:w-full h-auto flex items-center justify-center">
       <SquareWithTriangle3 />
       <SquareWithTriangle2 />
       <SquareWithCircle2 />

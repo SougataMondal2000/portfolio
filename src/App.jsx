@@ -4,7 +4,6 @@ import {
   Skills,
   Abstract1,
   Projects,
-  // Testimonials,
   Abstract2,
   Contact,
   Footer,
@@ -13,32 +12,29 @@ import {
 
 function App() {
   return (
-    <div className="bg-black scroll-smooth w-full">
-      <section className="">
+    <div  className="bg-black w-full">
+      <section>
         <Hero/>
       </section>
-      <section className="">
+      <section>
         <About/>
       </section>
-      <section className="">
+      <section>
         <Skills/>
       </section>
-      <section className="">
+      <section className="hidden lg:block">
         <Abstract1/>
       </section>
-      <section className="">
+      <section>
         <Projects/>
       </section>
-      {/* <section className="">
-        <Testimonials/>
-      </section> */}
-      <section className="">
+      <section className="hidden lg:block">
         <Abstract2/>
       </section>
-      <section className="">
+      <section>
         <Contact/>
       </section>
-      <section className="">
+      <section>
         <Footer/>
       </section>
       </div>

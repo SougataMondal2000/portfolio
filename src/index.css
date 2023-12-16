@@ -6,10 +6,58 @@
     font-family: 'Schibsted Grotesk', sans-serif;
 }
 
-h1,h2{
+h1{
     font-family: 'Syne', sans-serif;
+    animation: typing-effect 0.5s ease-in-out forwards;
+}
+
+h2{
+  font-family: 'Syne', sans-serif;
+  animation: typing-effect 1s ease-in-out forwards;
+}
+
+h3{
+  font-family: 'Syne', sans-serif;
+  animation: typing-effect 1.5s ease-in-out forwards;
+}
+
+p{
+  font-family: 'Syne', sans-serif;
+  animation: typing-effect 2s ease-in-out forwards;
 }
 
 .rounded-custom {
     border-radius: 40px;
 }
+
+img:hover {
+    animation: glitch 1s ease-in-out forwards;
+    animation-duration: 4s;
+  }
+  
+  @keyframes glitch {
+    0% {
+      transform: translateX(0px);
+    }
+    25% {
+      transform: translateX(-5px);
+    }
+    50% {
+      transform: translateX(5px);
+    }
+    75% {
+      transform: translateX(-5px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+  
+  @keyframes typing-effect {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+ 
+  
+  

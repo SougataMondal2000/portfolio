@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <div className="h-[500px] w-full relative flex items-center justify-center">
+    <div className="lg:h-[500px] h-full w-full relative flex items-center justify-center">
       <svg className="absolute w-full h-full">
         <pattern
           id="pattern-circles"
@@ -29,13 +29,13 @@ const About = () => {
           fill="url(#pattern-circles)"
         ></rect>
       </svg>
-      <div className="h-auto w-[1100px] p-10">
+      <div className=" lg:w-[1100px] w-full p-10">
         <div>
-          <h2 className="relative h-auto w-full text-[48px] text-[#588157] font-bold">
+          <h2 className="relative w-full text-[48px] text-[#588157] font-bold">
             Unleashing my story
           </h2>
         </div>
-        <div className="text-[#DAD7CD] text-[20px] pt-4 w-[60%] ">
+        <div className="text-[#DAD7CD] text-[20px] pt-4 lg:w-[60%] w-full">
           <p className="pb-8 ab">
             Sougata, a web wizard who spins byte into beautiful masterpieces.
             Excels in solving puzzles of the virtual world.

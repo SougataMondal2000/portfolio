@@ -2,19 +2,23 @@ import Button from "../components/Button";
 import Triangle from "../components/Triangle";
 
 const Hero = () => {
+  const cvLINK = "/assets/SougataMondal_Resume.pdf";
+  
   return (
-    <div className="h-[650px] w-full relative flex items-center justify-center">
-      <div className="h-auto w-[1000px]">
-        <div className="items-center justify-center flex">
+    <div className="lg:h-[650px] lg:p-4 h-full p-10 w-full flex items-center justify-center">
+      <div className="h-auto w-full lg:w-[1000px]">
+        <div className="flex items-center justify-center ">
           <Triangle />
         </div>
         <div className="pt-12 pb-10 justify-center flex text-center">
-          <h1 className="leading-none text-[#588157] font-bold text-[80px]">
+          <h1 className="leading-none text-[#588157] font-bold text-[60px] lg:text-[80px]">
             Web Wizardry by Sougata!
           </h1>
         </div>
         <div className="items-center justify-center flex gap-3 h-fit">
-          <Button label="Download CV"></Button>
+          <a href={cvLINK} download>
+            <Button label="Download CV"></Button>
+          </a>
           <Button label="Contact with me"></Button>
         </div>
       </div>

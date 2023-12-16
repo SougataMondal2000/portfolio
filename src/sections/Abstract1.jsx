@@ -6,8 +6,8 @@ import SquareWithTriangle from "../components/SquareWithTriangle"
 
 const Abstract1 = () => {
   return (
-    <div className="p-20 w-full h-auto relative flex items-center justify-center">
-      <SquareWithTriangle />
+    <div className="lg:p-20 p-10 lg:w-full h-auto flex items-center justify-center">
+      <SquareWithTriangle/>
       <FourColorSquare />
       <SquareWithCircles />
       <SquareWithLargeCircle/>
