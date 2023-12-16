@@ -1,5 +1,5 @@
 import Button from "../components/Button";
-import Triangle from "../components/Triangle";
+import Triangle from "../components/Triangle"; 
 
 const Hero = () => {
   const cvLINK = "/assets/SougataMondal_Resume.pdf";

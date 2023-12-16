@@ -1,7 +1,7 @@
 const projects = [
   {
-    projectIMG: "/assets/food-app.png",
-    projectURL: "https://github.com/SougataMondal2000/Food-App",
+    projectIMG: "/assets/insta-clone.png",
+    projectURL: "https://github.com/SougataMondal2000/insta-clone",
   },
   {
     projectIMG: "/assets/todoodle.png",
