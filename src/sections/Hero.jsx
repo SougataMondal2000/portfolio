@@ -19,7 +19,10 @@ const Hero = () => {
           <a href={cvLINK} download>
             <Button label="Download CV"></Button>
           </a>
-          <Button label="Contact with me"></Button>
+          <a href="mailto:sougataofficial362000@gmail.com">
+            <Button label="Contact with me"></Button>
+          </a>
+          
         </div>
       </div>
     </div>
