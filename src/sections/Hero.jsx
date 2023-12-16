@@ -2,7 +2,7 @@ import Button from "../components/Button";
 import Triangle from "../components/Triangle"; 
 
 const Hero = () => {
-  const cvLINK = "/assets/SougataMondal_Resume.pdf";
+  const cvLINK = "/assets/SougataMondal-Resume.pdf";
   
   return (
     <div className="lg:h-[650px] lg:p-4 h-full p-10 w-full flex items-center justify-center">
