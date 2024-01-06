@@ -1,5 +1,9 @@
 const projects = [
   {
+    projectIMG: "/assets/phonepal-fullstack.png",
+    projectURL: "https://github.com/SougataMondal2000/PhonePal-fullstack",
+  },
+  {
     projectIMG: "/assets/insta-clone.png",
     projectURL: "https://github.com/SougataMondal2000/insta-clone",
   },
@@ -14,6 +18,10 @@ const projects = [
   {
     projectIMG: "/assets/pinterest-clone.png",
     projectURL: "https://github.com/SougataMondal2000/image-uploader",
+  },
+  {
+    projectIMG: "/assets/nike-clone.png",
+    projectURL: "https://github.com/SougataMondal2000/NikeNew",
   },
 ];
 
