@@ -9,6 +9,7 @@ import {
   Footer,
   TechStack,
 } from "./sections";
+import Test from "./sections/Test";
 
 function App() {
   return (
@@ -22,8 +23,11 @@ function App() {
       <section>
         <Skills />
       </section>
-      <section>
+      {/* <section>
         <TechStack />
+      </section> */}
+      <section>
+        <Test />
       </section>
       <section className="hidden lg:block">
         <Abstract1 />
