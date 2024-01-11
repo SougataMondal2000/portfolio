@@ -11,6 +11,9 @@ import { SiBootstrap } from "react-icons/si";
 import { FaPython } from "react-icons/fa";
 import { TbBrandMysql } from "react-icons/tb";
 import { IoLogoJavascript } from "react-icons/io";
+import { SiFlask } from "react-icons/si";
+import { BiLogoDjango } from "react-icons/bi";
+import { TbBrandNextjs } from "react-icons/tb";
 const techIcons = [
   {
     icon: <FaHtml5 className="lg:w-8 lg:h-8 w-5 h-5" />,
@@ -51,6 +54,15 @@ const techIcons = [
   {
     icon: <TbBrandMysql className="lg:w-8 lg:h-8 w-5 h-5" />,
   },
+  {
+    icon: <SiFlask className="lg:w-8 lg:h-8 w-5 h-5" />,
+  },
+  {
+    icon: <BiLogoDjango className="lg:w-8 lg:h-8 w-5 h-5" />,
+  },
+  {
+    icon: <TbBrandNextjs className="lg:w-8 lg:h-8 w-5 h-5" />,
+  },
 ];
 
 const TechStack = () => {
@@ -63,11 +75,11 @@ const TechStack = () => {
           </h2>
         </div>
         <div className="h-auto w-auto pb-4">
-          <ul className="flex gap-4 max-lg:justify-center items-center flex-wrap">
+          <ul className="flex gap-4 max-lg:justify-center items-center flex-wrap logos">
             {techIcons.map((item) => (
               <li
                 key={item.icon}
-                className="bg-[#DAD7CD] rounded-md border border-black flex justify-center items-center lg:w-20 lg:h-20 w-14 h-14 hover:bg-white transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300"
+                className="bg-[#DAD7CD] rounded-md flex justify-center items-center lg:w-20 lg:h-20 w-14 h-14 hover:bg-white transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300 logos-slide"
               >
                 {item.icon}
               </li>
