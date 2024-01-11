@@ -7,37 +7,40 @@ import {
   Abstract2,
   Contact,
   Footer,
-} 
-  from "./sections";
+} from "./sections";
+import TechStack from "./sections/TechStack";
 
 function App() {
   return (
-    <div  className="bg-black w-full">
+    <div className="bg-black w-full">
       <section>
-        <Hero/>
+        <Hero />
       </section>
       <section>
-        <About/>
+        <About />
       </section>
       <section>
-        <Skills/>
+        <Skills />
+      </section>
+      <section>
+        <TechStack />
       </section>
       <section className="hidden lg:block">
-        <Abstract1/>
+        <Abstract1 />
       </section>
       <section>
-        <Projects/>
+        <Projects />
       </section>
       <section className="hidden lg:block">
-        <Abstract2/>
+        <Abstract2 />
       </section>
       <section>
-        <Contact/>
+        <Contact />
       </section>
       <section>
-        <Footer/>
+        <Footer />
       </section>
-      </div>
+    </div>
   );
 }
 

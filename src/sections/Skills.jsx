@@ -29,23 +29,26 @@ const Skills = () => {
   return (
     <div className="h-auto w-full relative flex items-center justify-center pt-10">
       <div className="h-auto lg:w-[1100px] w-full p-10">
-      <div className="pb-10">
-        <h2 className="relative h-auto w-full text-[48px] text-[#DAD7CD] font-bold">
-          Skills and Expertise
-        </h2>
+        <div className="pb-10">
+          <h2 className="relative h-auto w-full text-[48px] text-[#DAD7CD] font-bold">
+            Skills and Expertise
+          </h2>
+        </div>
+        <div>
+          <ul className="grid grid-cols-2 gap-10">
+            {skills.map((skill) => (
+              <li key={skill.skill}>
+                <h3 className="text-[#DAD7CD] font-bold mb-2 text-[20px]">
+                  {skill.skill}
+                </h3>
+                <p className="text-[#A3B18A] text-[16px] lg:w-[75%] w-full">
+                  {skill.desc}
+                </p>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
-      <div >
-        <ul className="grid grid-cols-2 gap-10">
-          {skills.map((skill) => (
-            <li key={skill.skill} >
-              <h3 className="text-[#DAD7CD] font-bold mb-2 text-[20px]">{skill.skill}</h3>
-              <p className="text-[#A3B18A] text-[16px] lg:w-[75%] w-full">{skill.desc}</p>
-            </li>
-          ))}
-        </ul>
-      </div>
-      </div>
-      
     </div>
   );
 };

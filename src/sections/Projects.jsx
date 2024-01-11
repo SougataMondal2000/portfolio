@@ -21,7 +21,7 @@ const projects = [
   },
   {
     projectIMG: "/assets/nike-clone.png",
-    projectURL: "https://github.com/SougataMondal2000/NikeNew",
+    projectURL: "https://nike-new.vercel.app/",
   },
 ];
 
