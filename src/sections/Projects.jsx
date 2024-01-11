@@ -27,7 +27,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <div className="h-auto w-full flex items-center justify-center lg:pt-10">
+    <div className="h-auto w-full flex items-center justify-center lg:pt-10 animate-fade-right animate-duration-[2000ms] animate-delay-200">
       <div className="h-auto lg:w-[1100px]">
         <div className="p-10 pb-0">
           <h2 className="h-auto w-full text-[48px] text-[#DAD7CD] font-bold">

@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <div className="lg:h-[500px] h-full w-full relative flex items-center justify-center">
+    <div className="lg:h-[500px] h-full w-full relative flex items-center justify-center animate-fade-up animate-duration-[2000ms] animate-delay-200">
       <svg className="absolute w-full h-full">
         <pattern
           id="pattern-circles"

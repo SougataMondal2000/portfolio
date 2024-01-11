@@ -7,7 +7,7 @@ import {
   Abstract2,
   Contact,
   Footer,
-  TechStack,
+  // TechStack,
 } from "./sections";
 import Test from "./sections/Test";
 
