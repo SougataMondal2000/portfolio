@@ -11,7 +11,6 @@ import { SiBootstrap } from "react-icons/si";
 import { FaPython } from "react-icons/fa";
 import { TbBrandMysql } from "react-icons/tb";
 import { IoLogoJavascript } from "react-icons/io";
-
 const techIcons = [
   {
     icon: <FaHtml5 className="lg:w-8 lg:h-8 w-5 h-5" />,

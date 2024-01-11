@@ -7,8 +7,8 @@ import {
   Abstract2,
   Contact,
   Footer,
+  TechStack,
 } from "./sections";
-import TechStack from "./sections/TechStack";
 
 function App() {
   return (
