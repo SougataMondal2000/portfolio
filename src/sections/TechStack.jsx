@@ -14,6 +14,9 @@ import { IoLogoJavascript } from "react-icons/io";
 import { SiFlask } from "react-icons/si";
 import { BiLogoDjango } from "react-icons/bi";
 import { TbBrandNextjs } from "react-icons/tb";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import { Autoplay } from "swiper/modules";
 const techIcons = [
   {
     icon: <FaHtml5 className="lg:w-8 lg:h-8 w-5 h-5" />,
@@ -76,14 +79,51 @@ const TechStack = () => {
         </div>
         <div className="h-auto w-auto pb-4">
           <ul className="flex gap-4 max-lg:justify-center items-center flex-wrap logos">
-            {techIcons.map((item) => (
-              <li
-                key={item.icon}
-                className="bg-[#DAD7CD] rounded-md flex justify-center items-center lg:w-20 lg:h-20 w-14 h-14 hover:bg-white transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300 logos-slide"
-              >
-                {item.icon}
-              </li>
-            ))}
+            <Swiper
+              slidesPerView={7}
+              loop={true}
+              autoplay={{
+                delay: 0,
+                disableOnInteraction: false,
+              }}
+              speed={5000}
+              modules={[Autoplay]}
+              className=""
+            >
+              {techIcons.map((item) => (
+                <SwiperSlide key={item.index}>
+                  <li
+                    key={item.icon}
+                    className="bg-[#DAD7CD] rounded-md flex justify-center items-center lg:w-20 lg:h-20 w-14 h-14 hover:bg-white transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300 shadow-inner"
+                  >
+                    {item.icon}
+                  </li>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+            <Swiper
+              slidesPerView={7}
+              loop={true}
+              autoplay={{
+                delay: 0,
+                disableOnInteraction: false,
+                reverseDirection: true,
+              }}
+              speed={5000}
+              modules={[Autoplay]}
+              className="lg:pt-4"
+            >
+              {techIcons.map((item) => (
+                <SwiperSlide key={item.index}>
+                  <li
+                    key={item.icon}
+                    className="bg-[#DAD7CD] rounded-md flex justify-center items-center lg:w-20 lg:h-20 w-14 h-14 hover:bg-white transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300 logos-slide"
+                  >
+                    {item.icon}
+                  </li>
+                </SwiperSlide>
+              ))}
+            </Swiper>
           </ul>
         </div>
       </div>
