@@ -68,7 +68,7 @@ const techIcons = [
   },
 ];
 
-const TechStack = () => {
+const Test = () => {
   return (
     <div className="h-auto w-full relative flex items-center justify-center pt-10 animate-fade-right animate-duration-[2000ms] animate-delay-200">
       <div className="h-auto lg:w-[1100px] w-full p-10">
@@ -94,7 +94,7 @@ const TechStack = () => {
                 <SwiperSlide key={item.index}>
                   <li
                     key={item.icon}
-                    className="bg-[#DAD7CD] rounded-md flex justify-center items-center lg:w-20 lg:h-20 w-14 h-14 hover:bg-white transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300 shadow-inner"
+                    className="bg-[#DAD7CD] rounded-md flex justify-center items-center lg:w-20 lg:h-20 w-14 h-14 hover:bg-white transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300 logos-slide"
                   >
                     {item.icon}
                   </li>
@@ -131,4 +131,4 @@ const TechStack = () => {
   );
 };
 
-export default TechStack;
+export default Test;

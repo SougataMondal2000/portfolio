@@ -7,6 +7,7 @@ import Abstract2 from "./Abstract2";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import TechStack from "./TechStack";
+import Testimonials from "./Testimonials";
 
 export {
   Hero,
@@ -18,4 +19,5 @@ export {
   Contact,
   Footer,
   TechStack,
+  Testimonials,
 };

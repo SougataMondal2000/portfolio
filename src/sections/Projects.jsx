@@ -23,10 +23,14 @@ const projects = [
     projectIMG: "/assets/nike-clone.png",
     projectURL: "https://nike-new.vercel.app/",
   },
-  {
-    projectIMG: "/assets/atc.png",
-    projectURL: "https://anukultradingcorp.vercel.app/",
-  },
+  // {
+  //   projectIMG: "/assets/atc.png",
+  //   projectURL: "https://anukultradingcorp.vercel.app/",
+  // },
+  // {
+  //   projectIMG: "/assets/spotify-clone.png",
+  //   projectURL: "https://github.com/SougataMondal2000/spotify-ui-clonefr5",
+  // },
 ];
 
 const Projects = () => {

@@ -7,9 +7,9 @@ import {
   Abstract2,
   Contact,
   Footer,
-  // TechStack,
+  Testimonials,
+  TechStack,
 } from "./sections";
-import Test from "./sections/Test";
 
 function App() {
   return (
@@ -23,17 +23,17 @@ function App() {
       <section>
         <Skills />
       </section>
-      {/* <section>
-        <TechStack />
-      </section> */}
       <section>
-        <Test />
+        <TechStack />
       </section>
       <section className="hidden lg:block">
         <Abstract1 />
       </section>
       <section>
         <Projects />
+      </section>
+      <section>
+        <Testimonials />
       </section>
       <section className="hidden lg:block">
         <Abstract2 />
