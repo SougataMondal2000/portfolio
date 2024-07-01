@@ -16,12 +16,12 @@ const Testimonials = () => {
     <div className="">
       <div className="h-auto w-full flex items-center justify-center lg:pt-10 animate-fade-right animate-duration-[2000ms] animate-delay-200">
         <div className="h-auto lg:w-[1100px]">
-          <div className="p-10 pb-0">
-            <h2 className="h-auto w-full text-[48px] text-[#DAD7CD] font-bold">
+          <div className="px-10 pb-2">
+            <h2 className="h-auto w-full lg:text-[48px] text-[36px] text-[#DAD7CD] font-bold">
               Testimonials
             </h2>
           </div>
-          <div className="h-auto lg:w-[1000px] p-10">
+          <div className="h-auto lg:w-[1000px] px-10 py-2">
             <ul className="grid lg:grid-cols-2 grid-cols-1">
               {testimonials.map((item, id) => (
                 <TestimonialCard

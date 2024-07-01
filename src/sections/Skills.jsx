@@ -27,10 +27,10 @@ const skills = [
 
 const Skills = () => {
   return (
-    <div className="h-auto w-full relative flex items-center justify-center pt-10 animate-fade-right animate-duration-[2000ms] animate-delay-200">
+    <div className="h-auto w-full relative flex items-center justify-center md:pt-10 animate-fade-right animate-duration-[2000ms] animate-delay-200">
       <div className="h-auto lg:w-[1100px] w-full p-10">
-        <div className="pb-10">
-          <h2 className="relative h-auto w-full text-[48px] text-[#DAD7CD] font-bold">
+        <div className="md:pb-10 pb-4">
+          <h2 className="relative h-auto w-full md:text-[48px] text-[36px] text-[#DAD7CD] font-bold">
             Skills and Expertise
           </h2>
         </div>

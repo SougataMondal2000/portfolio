@@ -31,11 +31,11 @@ const About = () => {
       </svg>
       <div className=" lg:w-[1100px] w-full p-10">
         <div>
-          <h2 className="relative w-full text-[48px] text-[#588157] font-bold">
+          <h2 className="relative w-full md:text-[48px] text-[36px] text-[#588157] font-bold">
             Unleashing my story
           </h2>
         </div>
-        <div className="text-[#DAD7CD] text-[20px] pt-4 lg:w-[60%] w-full">
+        <div className="text-[#DAD7CD] md:text-[20px] text-[16px] pt-4 lg:w-[60%] w-full">
           <p className="pb-8 ab">
             Sougata, a web wizard who spins byte into beautiful masterpieces.
             Excels in solving puzzles of the virtual world.

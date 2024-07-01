@@ -70,14 +70,14 @@ const techIcons = [
 
 const Test = () => {
   return (
-    <div className="h-auto w-full relative flex items-center justify-center pt-10 animate-fade-right animate-duration-[2000ms] animate-delay-200">
+    <div className="h-auto w-full relative flex items-center justify-center md:pt-10 pt-2 animate-fade-right animate-duration-[2000ms] animate-delay-200">
       <div className="h-auto lg:w-[1100px] w-full p-10">
         <div className="pb-10">
-          <h2 className="relative h-auto w-full text-[48px] text-[#DAD7CD] font-bold">
+          <h2 className="relative h-auto w-full md:text-[48px] text-[36px] text-[#DAD7CD] font-bold">
             Tech Stack
           </h2>
         </div>
-        <div className="h-auto w-auto pb-4">
+        <div className="h-auto w-auto md:pb-4">
           <ul className="flex gap-4 max-lg:justify-center items-center flex-wrap logos">
             <Swiper
               slidesPerView={7}
