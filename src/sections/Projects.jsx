@@ -8,29 +8,13 @@ const projects = [
     projectURL: "https://github.com/SougataMondal2000/insta-clone",
   },
   {
-    projectIMG: "/assets/todoodle.png",
-    projectURL: "https://github.com/SougataMondal2000/todoodle_flask",
-  },
-  {
-    projectIMG: "/assets/game-listing.png",
-    projectURL: "https://github.com/SougataMondal2000/Game-Listinng-App",
-  },
-  {
     projectIMG: "/assets/pinterest-clone.png",
     projectURL: "https://github.com/SougataMondal2000/image-uploader",
   },
   {
-    projectIMG: "/assets/nike-clone.png",
-    projectURL: "https://nike-new.vercel.app/",
+    projectIMG: "/assets/medpuls.png",
+    projectURL: "https://medpuls.netlify.app/login",
   },
-  // {
-  //   projectIMG: "/assets/atc.png",
-  //   projectURL: "https://anukultradingcorp.vercel.app/",
-  // },
-  // {
-  //   projectIMG: "/assets/spotify-clone.png",
-  //   projectURL: "https://github.com/SougataMondal2000/spotify-ui-clonefr5",
-  // },
 ];
 
 const Projects = () => {
