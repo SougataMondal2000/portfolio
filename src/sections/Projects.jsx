@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   SiTailwindcss,
   SiNextdotjs,
@@ -6,7 +6,17 @@ import {
   SiNodedotjs,
   SiExpress,
   SiMongodb,
+  SiDigitalocean,
+  SiDocker,
+  SiRender,
+  SiNetlify,
 } from "react-icons/si";
+import {
+  FaServer,
+  FaExternalLinkAlt,
+  FaInfoCircle,
+  FaTimes,
+} from "react-icons/fa";
 
 const projects = [
   {
@@ -28,6 +38,7 @@ const projects = [
       "NextJS",
       "Tailwind",
       "Typescript",
+      "DigitalOcean",
     ],
     projectIMG: "/assets/sh.png",
     projectURL: "https://sabrihelpage.org/",
@@ -43,6 +54,8 @@ const projects = [
       "NextJS",
       "Tailwind",
       "Typescript",
+      "DigitalOcean",
+      "Docker",
     ],
     projectIMG: "/assets/syh.png",
     projectURL: "https://shareyrheart.com/",
@@ -51,7 +64,7 @@ const projects = [
     projectName: "Medical Dashboard System",
     projectDesc:
       "Advanced healthcare management platform featuring AI-powered diagnostics, electronic health records, and real-time patient monitoring.",
-    techStack: ["Nodejs", "Express", "MongoDB", "Tailwind", "NextJS"],
+    techStack: ["Nodejs", "Express", "MongoDB", "Tailwind", "NextJS", "Render"],
     projectIMG: "/assets/medpuls.png",
     projectURL: "https://medpuls.netlify.app/login",
   },
@@ -73,6 +86,14 @@ const getTechIcon = (tech) => {
       return <SiExpress {...iconProps} />;
     case "mongodb":
       return <SiMongodb {...iconProps} />;
+    case "digitalocean":
+      return <SiDigitalocean {...iconProps} />;
+    case "docker":
+      return <SiDocker {...iconProps} />;
+    case "render":
+      return <SiRender {...iconProps} />;
+    case "netlify":
+      return <SiNetlify {...iconProps} />;
     default:
       return <span className="text-white text-sm">{tech}</span>;
   }
@@ -91,25 +112,56 @@ const Projects = () => {
           <ul className="flex flex-wrap justify-start items-center">
             {projects.map((item, index) => (
               <li key={index} className="relative group">
-                <a href={item.projectURL} target="blank">
-                  <div className="relative overflow-hidden">
+                <div className="hidden md:block">
+                  <a href={item.projectURL} target="blank">
+                    <div className="relative overflow-hidden">
+                      <img
+                        src={item.projectIMG}
+                        alt={item.projectName}
+                        className="lg:h-[500px] lg:w-[500px] rounded-custom p-4 transition-transform duration-300 group-hover:scale-105"
+                      />
+                      <div className="absolute inset-0 bg-black bg-opacity-80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center p-8 m-4 rounded-custom">
+                        <h3 className="text-white text-xl font-bold mb-3 text-center">
+                          {item.projectName}
+                        </h3>
+
+                        <p className="text-gray-300 text-sm mb-4 text-center leading-relaxed">
+                          {item.projectDesc}
+                        </p>
+
+                        <div className="flex flex-wrap gap-3 justify-center items-center">
+                          {item.techStack.map((tech, techIndex) => (
+                            <div
+                              key={techIndex}
+                              className="flex items-center gap-1 bg-gray-700 px-2 py-1 rounded-md"
+                            >
+                              {getTechIcon(tech)}
+                              <span className="text-white text-xs">{tech}</span>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div className="md:hidden w-full">
+                  <div className="bg-[#0D0D0D] rounded-lg overflow-hidden shadow-lg mb-6">
                     <img
                       src={item.projectIMG}
                       alt={item.projectName}
-                      className="lg:h-[500px] lg:w-[500px] rounded-custom p-4 transition-transform duration-300 group-hover:scale-105"
+                      className="w-full h-48 object-cover"
                     />
 
-                    {/* Hover Overlay */}
-                    <div className="absolute inset-0 bg-black bg-opacity-80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center p-8 m-4 rounded-custom">
-                      <h3 className="text-white text-xl font-bold mb-3 text-center">
+                    <div className="p-4">
+                      <h3 className="text-[#DAD7CD] text-xl font-bold mb-2">
                         {item.projectName}
                       </h3>
 
-                      <p className="text-gray-300 text-sm mb-4 text-center leading-relaxed">
+                      <p className="text-[#A3B18A] text-sm mb-3">
                         {item.projectDesc}
                       </p>
 
-                      <div className="flex flex-wrap gap-3 justify-center items-center">
+                      <div className="flex flex-wrap gap-2 mb-4">
                         {item.techStack.map((tech, techIndex) => (
                           <div
                             key={techIndex}
@@ -120,9 +172,21 @@ const Projects = () => {
                           </div>
                         ))}
                       </div>
+
+                      <div className="flex gap-2">
+                        <a
+                          href={item.projectURL}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="bg-[#588157] text-white px-3 py-2 rounded-lg transition-colors duration-200 flex items-center gap-2 flex-1 justify-center"
+                        >
+                          <FaExternalLinkAlt size={14} />
+                          Visit
+                        </a>
+                      </div>
                     </div>
                   </div>
-                </a>
+                </div>
               </li>
             ))}
           </ul>
