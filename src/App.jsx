@@ -9,6 +9,7 @@ import {
   Footer,
   Testimonials,
   TechStack,
+  GithubStats,
 } from "./sections";
 
 function App() {
@@ -26,6 +27,9 @@ function App() {
       <section>
         <TechStack />
       </section>
+      {/* <section>
+        <GithubStats />
+      </section> */}
       <section className="hidden lg:block">
         <Abstract1 />
       </section>
