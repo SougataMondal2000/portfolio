@@ -13,7 +13,7 @@ const timelineData = [
   {
     title: "SEO Analyst",
     type: "experience",
-    company: "Digital Marketing Agency",
+    company: "Brainex Media",
     period: "Aug 2022 - Nov 2022",
     desc: "Browser's whisperer, organic traffic magnet. Unearthing content's hidden gold.",
     icon: FaSearch,
@@ -29,7 +29,7 @@ const timelineData = [
   {
     title: "Full Stack Developer",
     type: "experience",
-    company: "Tech Innovations Inc.",
+    company: "365 AI Tech",
     period: "Jan 2024 - Present",
     desc: "End-to-end architect, bridging frontend dreams with backend reality. Building digital ecosystems.",
     icon: FaCode,
