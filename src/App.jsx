@@ -10,6 +10,7 @@ import {
   Testimonials,
   TechStack,
   GithubStats,
+  EducationAndExperience,
 } from "./sections";
 
 function App() {
@@ -20,6 +21,9 @@ function App() {
       </section>
       <section>
         <About />
+      </section>
+      <section>
+        <EducationAndExperience />
       </section>
       <section>
         <Skills />

@@ -9,10 +9,12 @@ import Footer from "./Footer";
 import TechStack from "./TechStack";
 import GithubStats from "./GithubStats";
 import Testimonials from "./Testimonials";
+import EducationAndExperience from "./EducationAndExperience";
 
 export {
   Hero,
   About,
+  EducationAndExperience,
   Skills,
   Abstract1,
   Projects,

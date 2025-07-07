@@ -10,6 +10,7 @@ import {
   SiDocker,
   SiRender,
   SiNetlify,
+  SiVercel,
 } from "react-icons/si";
 import {
   FaServer,
@@ -19,30 +20,6 @@ import {
 } from "react-icons/fa";
 
 const projects = [
-  {
-    projectName: "ATC.",
-    projectDesc:
-      "Modern e-commerce landing page featuring responsive design, smooth animations, and conversion-optimized layouts for a local retail business.",
-    projectIMG: "/assets/atc.png",
-    techStack: ["Tailwind", "NextJS", "Typescript"],
-    projectURL: "https://anukultradingcorp.vercel.app/",
-  },
-  {
-    projectName: "Sabri Helpage",
-    projectDesc:
-      "Comprehensive NGO platform with donation management, volunteer coordination, and impact tracking to amplify social change initiatives.",
-    techStack: [
-      "Nodejs",
-      "Express",
-      "MongoDB",
-      "NextJS",
-      "Tailwind",
-      "Typescript",
-      "DigitalOcean",
-    ],
-    projectIMG: "/assets/sh.png",
-    projectURL: "https://sabrihelpage.org/",
-  },
   {
     projectName: "ShareYrHeart",
     projectDesc:
@@ -56,17 +33,51 @@ const projects = [
       "Typescript",
       "DigitalOcean",
       "Docker",
+      "Vercel",
     ],
     projectIMG: "/assets/syh.png",
     projectURL: "https://shareyrheart.com/",
   },
   {
+    projectName: "Sabri Helpage",
+    projectDesc:
+      "Comprehensive NGO platform with donation management, volunteer coordination, and impact tracking to amplify social change initiatives.",
+    techStack: [
+      "Nodejs",
+      "Express",
+      "MongoDB",
+      "NextJS",
+      "Tailwind",
+      "Typescript",
+      "DigitalOcean",
+      "Vercel",
+    ],
+    projectIMG: "/assets/sh.png",
+    projectURL: "https://sabrihelpage.org/",
+  },
+  {
     projectName: "Medical Dashboard System",
     projectDesc:
       "Advanced healthcare management platform featuring AI-powered diagnostics, electronic health records, and real-time patient monitoring.",
-    techStack: ["Nodejs", "Express", "MongoDB", "Tailwind", "NextJS", "Render"],
+    techStack: [
+      "Nodejs",
+      "Express",
+      "MongoDB",
+      "Tailwind",
+      "NextJS",
+      "Render",
+      "Netlify",
+    ],
     projectIMG: "/assets/medpuls.png",
     projectURL: "https://medpuls.netlify.app/login",
+  },
+  {
+    projectName: "ATC.",
+    projectDesc:
+      "Modern e-commerce landing page featuring responsive design, smooth animations, and conversion-optimized layouts for a local retail business.",
+    projectIMG: "/assets/atc.png",
+    techStack: ["Tailwind", "NextJS", "Typescript", "Vercel"],
+    projectURL: "https://anukultradingcorp.vercel.app/",
   },
 ];
 
@@ -94,6 +105,8 @@ const getTechIcon = (tech) => {
       return <SiRender {...iconProps} />;
     case "netlify":
       return <SiNetlify {...iconProps} />;
+    case "vercel":
+      return <SiVercel {...iconProps} />;
     default:
       return <span className="text-white text-sm">{tech}</span>;
   }
@@ -104,7 +117,7 @@ const Projects = () => {
     <div className="h-auto w-full flex items-center justify-center md:pt-10 pt-2 animate-fade-right animate-duration-[2000ms] animate-delay-200">
       <div className="h-auto lg:w-[1100px] w-full p-10">
         <div className="md:pb-10 pb-2">
-          <h2 className="relative h-auto w-full md:text-[48px] text-[36px] text-[#DAD7CD] font-bold">
+          <h2 className="relative h-auto w-full md:text-[48px] text-[32px] text-[#DAD7CD] font-bold flex items-center after:content-[''] after:flex-1 after:h-[1px] after:bg-gradient-to-r after:from-[#DAD7CD] after:to-transparent after:ml-4">
             Client Projects
           </h2>
         </div>

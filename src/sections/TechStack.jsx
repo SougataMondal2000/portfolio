@@ -73,7 +73,7 @@ const Test = () => {
     <div className="h-auto w-full relative flex items-center justify-center md:pt-10 pt-2 animate-fade-right animate-duration-[2000ms] animate-delay-200">
       <div className="h-auto lg:w-[1100px] w-full p-10">
         <div className="pb-10">
-          <h2 className="relative h-auto w-full md:text-[48px] text-[36px] text-[#DAD7CD] font-bold">
+          <h2 className="relative h-auto w-full md:text-[48px] text-[32px] text-[#DAD7CD] font-bold flex items-center after:content-[''] after:flex-1 after:h-[1px] after:bg-gradient-to-r after:from-[#DAD7CD] after:to-transparent after:ml-4">
             Tech Stack
           </h2>
         </div>
