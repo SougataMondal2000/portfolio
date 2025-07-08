@@ -72,7 +72,7 @@ const TimelineNode = ({ item, index, isLeft }) => {
           </div>
           <h3
             className={`text-[#DAD7CD] font-bold text-[18px] md:text-[20px] mb-2 flex items-center gap-2 ${
-              !isLeft ? "justify-start" : "justify-end"
+              !isLeft ? "md:justify-start" : "md:justify-end"
             }`}
           >
             {(!isLeft || window.innerWidth < 768) && (

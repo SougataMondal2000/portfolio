@@ -23,9 +23,9 @@ const Footer = () => {
       <div>
         <div className="h-auto w-auto pb-4">
           <ul className="flex gap-2 justify-center items-center">
-            {icons.map((item) => (
+            {icons.map((item, index) => (
               <li
-                key={item.social}
+                key={index}
                 className="bg-[#DAD7CD] rounded-full border border-black flex justify-center items-center w-6 h-6 hover:bg-white transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300"
               >
                 <a href={item.socialURL} target="blank">

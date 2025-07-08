@@ -32,21 +32,27 @@ const About = () => {
       <div className=" lg:w-[1100px] w-full p-10">
         <div>
           <h2 className="relative w-full md:text-[48px] text-[36px] text-[#588157] font-bold">
-            Unleashing my story
+            My story
           </h2>
         </div>
         <div className="text-[#DAD7CD] md:text-[20px] text-[16px] pt-4 lg:w-[60%] w-full">
           <p className="pb-8 ab">
-            Sougata, a web wizard who spins byte into beautiful masterpieces.
-            Excels in solving puzzles of the virtual world.
+            I’m Sougata, a self-taught developer who started by building passion
+            projects and debugging my way through late nights. What began as
+            curiosity soon turned into a deep commitment to frontend
+            engineering.
           </p>
           <p className="pb-8">
-            Master tamer of bugs and explorer of unknown virtual terrains. He’s
-            not afraid to venture into wild codes.
+            From understanding the basics of JavaScript to building full-stack
+            applications with React and Next.js, I’ve grown by getting my hands
+            dirty and solving real-world problems. I’ve worked on everything
+            from responsive UI to API integrations—always focusing on clean,
+            maintainable code.
           </p>
           <p>
-            When he’s not busy coding, he’s either conjuring creative designs or
-            weaving dreams with codes.
+            Beyond code, I enjoy design and pay attention to detail. Whether
+            it's tweaking pixel-perfect layouts or learning about new tools, I’m
+            always trying to become a better builder—one commit at a time.
           </p>
         </div>
       </div>

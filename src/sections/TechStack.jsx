@@ -90,10 +90,10 @@ const Test = () => {
               modules={[Autoplay]}
               className=""
             >
-              {techIcons.map((item) => (
-                <SwiperSlide key={item.index}>
+              {techIcons.map((item, index) => (
+                <SwiperSlide key={index}>
                   <li
-                    key={item.icon}
+                    key={index}
                     className="bg-[#DAD7CD] rounded-md flex justify-center items-center lg:w-20 lg:h-20 w-14 h-14 hover:bg-white transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300 logos-slide"
                   >
                     {item.icon}
@@ -113,10 +113,10 @@ const Test = () => {
               modules={[Autoplay]}
               className="lg:pt-4"
             >
-              {techIcons.map((item) => (
-                <SwiperSlide key={item.index}>
+              {techIcons.map((item, index) => (
+                <SwiperSlide key={index}>
                   <li
-                    key={item.icon}
+                    key={index}
                     className="bg-[#DAD7CD] rounded-md flex justify-center items-center lg:w-20 lg:h-20 w-14 h-14 hover:bg-white transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300 logos-slide"
                   >
                     {item.icon}
