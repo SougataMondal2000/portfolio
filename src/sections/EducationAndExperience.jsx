@@ -115,8 +115,8 @@ const TimelineNode = ({ item, index, isLeft }) => {
 
 const EducationAndExperience = () => {
   return (
-    <div className="h-auto w-full relative flex items-center justify-center md:pt-10 animate-fade-right animate-duration-[2000ms] animate-delay-200">
-      <div className="h-auto lg:w-[1100px] w-full p-4 md:p-10">
+    <div className="h-auto w-full relative flex items-center justify-center md:pt-10 pt-2 animate-fade-right animate-duration-[2000ms] animate-delay-200">
+      <div className="h-auto lg:w-[1100px] w-full p-10">
         <div className="md:pb-10 pb-6">
           <h2 className="relative h-auto w-full md:text-[48px] text-[32px] text-[#DAD7CD] font-bold flex items-center after:content-[''] after:flex-1 after:h-[1px] after:bg-gradient-to-r after:from-[#DAD7CD] after:to-transparent after:ml-4">
             My Journey
